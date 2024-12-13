@@ -1,0 +1,110 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    color: #333;
+  }
+  
+  header {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  h1, h2 {
+    margin: 0.5rem 0;
+  }
+
+  .welcome-section {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #004080;
+  }
+  
+  form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #004080;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #00264d;
+  }
+  
+  .output-section, .saved-data-section {
+    margin-top: 2rem;
+  }
+  
+  .saved-calculation {
+    border: 2px solid #004080;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #e6f0ff;
+    position: relative;
+  }
+  
+  .saved-calculation p {
+    margin: 0.3rem 0;
+  }
+  
+  .visualize-button {
+    display: block;
+    margin: 1rem 0;
+    text-align: center;
+  }
+  
+  .visualization {
+    display: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    animation: pop 0.3s ease-out;
+  }
+  
+  @keyframes pop {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  

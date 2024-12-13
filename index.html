@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Options Pricing Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Options Pricing Calculator</h1>
+  </header>
+  <main>
+    <section class="welcome-section">
+      <h2>Welcome to the Options Pricing Calculator</h2>
+      <p>This tool helps you calculate the price of financial options using models like Black-Scholes. Input your parameters, save calculations, and visualize data for a better understanding of financial options.</p>
+      <button id="start-btn">Start Calculation</button>
+    </section>
+    <section class="form-section" id="calculation-section">
+      <h2>Calculate Option Price</h2>
+      <form id="option-form">
+        <label for="stock-price">Stock Price ($):</label>
+        <input type="number" id="stock-price" required>
+        
+        <label for="strike-price">Strike Price ($):</label>
+        <input type="number" id="strike-price" required>
+        
+        <label for="time-to-maturity">Time to Maturity (years):</label>
+        <input type="number" step="0.01" id="time-to-maturity" required>
+        
+        <label for="volatility">Volatility (%):</label>
+        <input type="number" step="0.1" id="volatility" required>
+        
+        <label for="risk-free-rate">Risk-Free Rate (%):</label>
+        <input type="number" step="0.1" id="risk-free-rate" required>
+        
+        <button type="submit">Calculate</button>
+      </form>
+    </section>
+    <section class="output-section">
+        <h2>Option Price</h2>
+        <div id="result">Enter parameters to see the result.</div>
+        <button id="save-btn" style="display: none;">Save Calculation</button>
+    </section>
+    <section class="saved-data-section">
+        <h2>Saved Calculations</h2>
+        <div id="saved-data">
+          <p>No calculations saved yet.</p>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Options Pricing Tool</p>
+  </footer>
+</body>
+</html>
